@@ -69,8 +69,15 @@ let update = () => {
 
   requestAnimationFrame(update);
   frames++;
-  while(maxCharCount<120) {
-  maxCharCount*=1.1;
+   if (respWidth < 770) {
+    while (maxCharCount < 60) {
+      maxCharCount *= 1.1;
+    }
+  }
+  else {
+    while (maxCharCount < 120) {
+      maxCharCount *= 1.1;
+    }
   }
 };
 
