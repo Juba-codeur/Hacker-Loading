@@ -69,7 +69,7 @@ let update = () => {
 
   requestAnimationFrame(update);
   frames++;
-   if (respWidth < 770) {
+   if (innerWidth < 770) {
     while (maxCharCount < 60) {
       maxCharCount *= 1.1;
     }
